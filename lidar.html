@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Carbon Calculations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="choropleth.html">Choropleth Maps</a></li>						
+							<li><a href="vector.html">Vector Map</a></li>
+							<li><a href="lc.html">Land Cover Classification Map</a></li>
+							<li><a href="carbon.html">Carbon Calculations</a></li>
+							<li><a href="rem.html">Relative Elevation Model</a></li>
+							<li><a href="lidar.html">LiDAR Maps</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>LiDAR Maps</h1>
+							<h2>Description of map</h2>
+							<p>The aim of creating a LiDAR map is to accurately capture and represent detailed three-dimensional information about the Earth's surface and its features. LiDAR, which stands for Light Detection and Ranging, uses laser pulses to measure distances to the Earth's surface, providing highly precise elevation data. This map visualizes England’s surface area. </p>
+								<h2>How was it made?</h2>
+								<p>The process began with downloading LiDAR data including DSM, DTM, LAZ, and RGB imagery, which were organized into a new project folder in ArcGIS Pro. After converting the LAZ file to LAS format due to size constraints, I added the data to the project and adjusted display settings to manage the large datasets effectively. Using specialized tools within ArcGIS Pro, I explored the LiDAR data in 3D, visualizing features like trees and terrain variations through different return types. Creating a hillshade from the DSM and overlaying it with the RGB imagery enhanced the 3D visualization. I conducted measurements of tree heights using the Measure tool and utilized profile views for further analysis. Ultimately, I configured the data layers including hillshade, DSM, RGB, and clipped LiDAR points into a 3D scene, defined scene properties, and prepared metadata for web publishing.</p>
+							<h2>LiDAR Map of England</h2>
+					
+					<iframe src="https://uni-utrecht.maps.arcgis.com/apps/instant/basic/index.html?appid=0e205194308341b0be493a5f77cff5ad" width="100%" height="800px" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+						
+								<h2>Skills Acquired</h2>
+								<p>I learned to manage and integrate large datasets like DSM, DTM, LAZ, and RGB imagery within a structured project environment. Converting LAZ files to LAS format and optimizing display settings for efficient data visualization were key tasks. Visualizing LiDAR data in 3D, analyzing terrain features, and tree distributions improved my spatial analysis abilities. Creating and overlaying a hillshade from DSM with RGB imagery enhanced my skills in spatial visualization and analysis techniques. Additionally, conducting precise measurements of tree heights and utilizing profile views for detailed analysis deepened my proficiency in spatial measurement and analysis tools. Finally, configuring data layers for a 3D scene, defining scene properties, and preparing metadata for web publishing strengthened my skills in data presentation and dissemination.</p>
+				
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

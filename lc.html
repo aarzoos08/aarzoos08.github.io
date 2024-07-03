@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Land Cover Classification Maps</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="choropleth.html">Choropleth Maps</a></li>						
+							<li><a href="vector.html">Vector Map</a></li>
+							<li><a href="lc.html">Land Cover Classification Map</a></li>
+							<li><a href="carbon.html">Carbon Calculations</a></li>
+							<li><a href="rem.html">Relative Elevation Model</a></li>
+							<li><a href="lidar.html">LiDAR Maps</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Land Cover Classification Maps</h1>
+							<h2>Description of map</h2>
+							<p>The aim of creating the land cover classification map for Mumbai's suburbs was to accurately depict and categorize the various types of land cover in this urban area. This map serves practical purposes such as urban planning, environmental monitoring, and resource management by providing insights into the distribution of built-up areas, vegetation, water bodies, and other land uses. It helps in understanding urban dynamics, supporting decisions related to sustainable development, infrastructure planning, and environmental conservation efforts in the suburban region of Mumbai.</p>
+								<h2>How was it made?</h2>
+								<p>I began by completing an Esri course on Supervised Pixel Based Image Classification to gain foundational knowledge. Following this, I downloaded Sentinel 2 satellite imagery of Science Park Utrecht from either Google Earth Engine or directly from ESA.
+								<p>Using ArcGIS Pro, I created a project named "LCClassification" and imported the satellite imagery. I adjusted the band combinations to create both false color and true color composites to enhance visual interpretation. Next, I utilized tools within ArcGIS Pro to analyze the spatial resolution of the imagery and to examine spectral profiles of different land cover types. For classification tasks, I employed various methods including Unsupervised and Supervised Pixel Based Classification using the Classification Wizard.</p>
+
+								<h2>Supervised Pixel Based Classification</h2>
+<p>This involves using training data to recognize different land cover types based on a set of known samples. Each pixel is then classified based on its similarity to the training samples. As the training data is more accurate than unsupervised classification, supervised pixel based classification generally produces more accurate and interpretable results. It does depend on accurate and extensive training data, however. It makes sense that this map corresponds to what I know about the land cover in Mumbai, as the training data is representative of my own knowledge, and hence the map is also representative of that.</p>							<span class="image main"><img src="images/lc1.png" alt="" /></span>
+<h2>Normalized Difference Vegetation Index</h2>
+<p>Additionally, I computed the Normalized Difference Vegetation Index (NDVI) to assess vegetation health, applying appropriate bands and symbology to visualize the data effectively.</p>
+								<span class="image main"><img src="images/lc.png" alt="" /></span>
+								<h2>Skills Acquired</h2>
+								<p>Firstly, I gained proficiency in handling satellite imagery and geospatial data within ArcGIS Pro, including importing, visualizing, and analyzing raster data. I developed expertise in applying classification techniques such as supervised and unsupervised classification, which involved interpreting spectral profiles and adjusting classification parameters for accurate mapping. Additionally, I enhanced my ability to use geoprocessing tools for tasks like spatial analysis and raster function calculations, particularly evident in tasks such as calculating NDVI for vegetation analysis.</p>
+				
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

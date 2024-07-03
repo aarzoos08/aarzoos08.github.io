@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Carbon Calculations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="choropleth.html">Choropleth Maps</a></li>						
+							<li><a href="vector.html">Vector Map</a></li>
+							<li><a href="lc.html">Land Cover Classification Map</a></li>
+							<li><a href="carbon.html">Carbon Calculations</a></li>
+							<li><a href="rem.html">Relative Elevation Model</a></li>
+							<li><a href="lidar.html">LiDAR Maps</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Carbon Calculations</h1>
+							<h2>Description of map</h2>
+							<p>This thematic map focuses on carbon density and potential areas for carbon sequestration planning. Using data about the Gross Primary Productivity, Aboveground Carbon Density, Forest Cover, and Carbon Sequestration Potential Index, agencies can identify areas of conservation, as deforesting these places would result in a large release in carbon. </p>
+							
+							<h2>Carbon Calculations in the Sundarbans</h2>
+								<span class="image main"><img src="images/carbon.png" alt="" /></span>
+					
+					<iframe src="https://code.earthengine.google.com/25a008e37bf19b6bb60d5580b7fbb1ab" width="100%" height="800px" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+							<p>The Sundarbans is a vast mangrove forest in the delta in the south of Bangladesh and India's West Bengal. It features a flat, low-lying landscape with numerous tidal waterways and rich biodiversity. The region has a tropical maritime climate with hot, humid summers, heavy monsoon rains, and cooler winters.</p>
+							
+							<h2>How was it made?</h2>
+								<p>Firstly, I identified the region of interest (ROI) using either a drawn geometry or obtained Shapefile, ensuring it encompassed Mumbai's suburban area. I utilized tools like QGIS or ArcGIS Pro to manipulate and refine the ROI shapefile as needed. Next, I uploaded the shapefile to Google Earth Engine (GEE) assets for further processing.</p>
+								<p>Secondly, I sourced satellite imagery appropriate for the classification task, focusing on obtaining high-resolution data such as Sentinel-2 imagery. This involved navigating through ESA databases to locate and download the relevant Geotiff files covering Mumbai's suburbs.</p>
+								<p>Thirdly, I utilized GEE's coding environment to perform tasks such as importing the Geotiff files into GEE assets and executing scripts to preprocess and analyze the data. This included calculating spectral indices like NDVI and performing supervised and unsupervised classification to classify different land cover types.</p>
+							
+								<h2>Skills Acquired</h2>
+								<p>Uploading shapefiles to Google Earth Engine (GEE) assets enhanced my understanding of cloud-based geospatial platforms and their capabilities for large-scale data processing. Secondly, sourcing and acquiring satellite imagery from ESA databases improved my knowledge of remote sensing data sources and file formats like Geotiff, crucial for selecting appropriate data for specific analysis tasks. Lastly, using GEE's JavaScript coding environment expanded my scripting skills, enabling me to automate processes such as data importation, preprocessing, and advanced spatial analysis techniques like spectral index calculation and land cover classification.</p>
+				
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

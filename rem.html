@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Relative Elevation Model </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="choropleth.html">Choropleth Maps</a></li>						
+							<li><a href="vector.html">Vector Map</a></li>
+							<li><a href="lc.html">Land Cover Classification Map</a></li>
+							<li><a href="carbon.html">Carbon Calculations</a></li>
+							<li><a href="rem.html">Relative Elevation Model</a></li>
+							<li><a href="lidar.html">LiDAR Maps</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Relative Elevation Model</h1>
+							<p>I made a Relative Elevation Model on QGIS. These are derived from a Digital Terrain Model that was derived from LiDAR data. A relative elevation model represents the height of a terrain relative to a specific reference point or surface, highlighting variations in elevation across a landscape.</p>
+							<p>The map covers the Goeree-Overflakkee, a delta province in the southern part of the Netherlands, is known for having the largest beach in the country and is a popular destination for beach resort tourism. It could be quite interesting to observe the natural changes in elevation and compare them to man-made ground structures.</p>
+							<span class="image main"><img src="images/pic16.png" alt="" /></span>
+								<h2>How was it made?</h2>
+								<ul>
+								<li>I downloaded the data from the online Geotiles resource in a zip file (two resources). I opened the tiles and merged the two files into one tiff file. </li>
+								<li>I changed the symbology of the layer to clearly show the elevations of the map. </li>
+								<li>I added a cross section layer, where I drew lines perpendicular to the river and added elevations for all these cross section lines, with the elevations going from high to low to show the downstream flow of the river.</li>
+								<li>I interpolated this layer using the TIN interpolation and calculated a new raster layer, in which I subtracted the interpolated layer from the original tiff layer with the two geotiles. </li>
+								<li>I changed the symbology to make the map's elements stand out best, and printed and stylized the map.</li>
+								</ul>
+
+								<h2>Skills Acquired </h2>
+								<p> I learned how to employ raster calculations and TIN interpolation. Through the stylistic choices, I practiced the art of cartography.</p>
+							
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
